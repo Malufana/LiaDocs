@@ -1,0 +1,84 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Details from '@theme/Details';
+
+
+# Contextualização
+
+<Tabs>
+    <TabItem value="introducao" label="Introdução">
+        ## Comply Track
+        É uma plataforma desenvolvida pela GS/OS que armazena e gerencia contratos de toda a BOSCH, controla o fluxo de quem cria e as pessoas responsaveis por assinar esses contratos
+    </TabItem>
+
+    <TabItem value="tecnologias" label="Tecnologias Utilizadas">
+        - Python
+        - Langchain
+        - Azure
+        - FastApi
+        - Vue.js
+        - Quasar
+        - Docusaurus
+        - Clickup
+        - Canva
+    </TabItem>
+
+    <TabItem value="arquitetura" label="Arquitetura Geral">
+        ## Visão Geral
+        O projeto foi estruturado com base em uma arquitetura de camadas, separando responsabilidades entre o front-end, back-end e banco de dados. Essa abordagem visa garantir maior escalabilidade, manutenibilidade e organização do sistema.
+
+        - **Front-End**: Desenvolvido em Vue.js, responsável pela interface do usuário;
+        - **Back-End**: API desenvolvida com python e fastAPI, gerencia a comunicação com o front-end e a openIa da Azure;
+        - **Banco**: Utiliza o proprio banco da Azure, o Blob Storage, onde esta armazenado com contratos.
+
+        ## Componentes da Arquitetura
+        ### Front-End
+        - Framework: **Vue.js**
+        - Funcionalidades: Consome a API, renderiza dados, gerencia rotas
+        - Comunicação: Requisições HTTP usando o `axios`
+
+        ### Back-End
+        - Framework: **FastAPI**
+        - Função: Processa dados, gera resumos com a IA, retorna resultados para o front
+        - Integração com IA: Usa OpenIA/Azure para a geração de resumos
+
+        ### Banco de dados
+        - Tipo: **Azure Blob Storage**
+        - Utilização: Armazena os contratos e seus templates
+
+        ## Fluxo de dados
+        1. O usuário acessa o front-end e entra em um contrato dentro da aba de "Criados Recentemente"
+        2. O front-end envia o base64 do contrato para a API
+        3. A API analisa se o base64 é um html ou um pdf, extrai o texto, processa com a IA e retorna o resumo
+        4. O front-end exibe o resumo para o usuário
+
+        ## Diagrama da Arquitetura
+        ![Arquitetura](/img/arquiteturav2.png)
+    </TabItem>
+
+    <TabItem value="publico" label="Público Alvo e Benefícios">
+        ## Público-Alvo
+        Este projeto é voltado para:
+        - **Profissionais Jurídicos**: que lidam com grandes volumes de contratos
+        - **Empresas e Departamentos Legais**: que precisam automatizar e agilizar o processo de leitura e análise contratual
+        - **Usuários que não possuem formação jurídica**: mas precisam entender contratos complexos de forma simples.
+
+        ## Problemas enfretados
+        - Leitura de contratos longos é **demorada e repetitiva**
+        - Termos jurídicos dificultam a **Compreensão por pessoas não especializadas**
+        - Falta de ferramentas que resumam automaticamente cláusulas e termos relevantes
+        
+        ## Como o projeto resolve
+        A solução desenvolvida utiliza inteligência artificial para:
+        - Extrair automaticamente o texto de contratos em pdf
+        - Resumir o conteúdo de forma clara e objetiva
+        - Disponibilizar os resumos em uma interface visual e acessível
+
+        ## Benefícios
+        - **Economia de tempo**: análise contratual em segundos
+        - **Compreensão facilitada**: resumos simplificam termos técnicos
+        - **Aumento da produtividade**: usuários podem focar em decisões, não na leitura
+        - **Uso corporativo**: ideal para quem lida com grande volume de documentos legais
+    </TabItem>
+</Tabs>
+

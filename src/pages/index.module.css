@@ -1,0 +1,240 @@
+.bannerImage{
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.sobreLia{
+  background: linear-gradient(to right, #006AA6, #0079BC, #0096E8);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.sobreLiaDark{
+  background: linear-gradient(to right, #003E64, #006AA6);
+}
+
+.sobreContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.sobreImagem img{
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobreTexto{
+  width: 55%;
+}
+
+.sobreTexto h2{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sobreTexto p{
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.beneficios{
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.beneficios h2{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.beneficiosCards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.beneficiosCardsDark{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: black;
+}
+
+.card{
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.time{
+  background: linear-gradient(to right, #006AA6, #0079BC, #0096E8);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.timeDark{
+  background: linear-gradient(to right, #003E64, #006AA6);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.timeTitulo{
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.membros{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.membro{
+  text-align: center;
+  border-radius: 10%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem;
+}
+
+.membro:hover{
+  width: 24%;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  border-radius: 10%;
+}
+
+.foto{
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+}
+
+.membro h3{
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.funcao{
+  font-style: italic;
+  color: #e0e0e0;
+  font-size: 1.5rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icons a img{
+  width: 35px;
+  height: 35px;
+}
+
+.icones a:hover img{
+  transform: scale(1.2);
+}
+
+@media (max-width: 900px) {
+  .sobreImagem,
+  .sobreTexto {
+    width: 90%;
+    
+  }
+
+  .sobreTexto h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .sobreTexto p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .beneficios h2{
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .beneficiosCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card img{
+    width: 40px;
+  }
+
+  .membros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membro {
+    width: 90%;
+  }
+
+  .foto{
+    height: 180px;
+  }
+
+  .timeTitulo {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .sobreTexto h2,
+  .beneficios h2{
+    font-size: 1.8rem;
+  }
+
+  .sobreTexto p{
+    font-size: 0.9rem;
+  }
+
+  .card{
+    padding: 1rem;
+  }
+
+  .card img{
+    width: 30px;
+  }
+
+  .foto{
+    height: 150px;
+  }
+}
