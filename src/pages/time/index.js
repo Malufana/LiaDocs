@@ -20,7 +20,7 @@ export default function Time(){
                         <div className={styles.infoContainer}>
                             <div className={styles.sobre}>
                                 <h3>ANA MALUF</h3>
-                                <p>Ana Beatriz Maluf, conhecida como Maluf, é formada em Técnico de Informática pelo IFSP e concluiu recentemente o curso técnico de Análise e Desenvolvimento de Sistemas pelo SENAI - Roberto Mange. Ela deseja seguir carreira na área de desenvolvimento, buscando aprimorar seus conhecimentos em front-end, back-end, inteligência artificial e análise de dados. Atuou como desenvolvedora full-stack no projeto LIA, onde enfrentou desafios significativos, mas adorou contribuir para o sucesso do projeto junto à equipe.</p>
+                                <p>Ana Beatriz Maluf, conhecida como Maluf, é formada em Técnico de Informática pelo IFSP e concluiu recentemente o curso técnico de Desenvolvimento de Sistemas pelo SENAI - Roberto Mange. Ela deseja seguir carreira na área de desenvolvimento, buscando aprimorar seus conhecimentos em front-end, back-end, inteligência artificial e análise de dados. Atuou como desenvolvedora full-stack no projeto LIA, onde enfrentou desafios significativos, mas adorou contribuir para o sucesso do projeto junto à equipe.</p>
                                 <div className={styles.icons}>
                                     <p>
                                         Full-Stack
